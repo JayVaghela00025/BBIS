@@ -1050,28 +1050,229 @@
         .stat-number {
             transition: all 0.3s ease;
         }
+.hospital-footer {
+  background: #2f363d;
+  color: #fff;
+  padding-top: 60px;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-        /* Footer link slide effect */
-        .footer-links a {
-            position: relative;
-            display: inline-block;
-        }
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 50px;
+}
 
-        .footer-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background: #764ba2;
-            transition: width 0.3s ease;
-        }
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-        .footer-links a:hover::after {
-            width: 100%;
-        }
+.footer-brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
+.footer-brand h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.footer-brand span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-text {
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #d1d1d1;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #3b4148;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background: #00c37a;
+}
+
+.footer-box h3 {
+  margin-bottom: 20px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 12px;
+}
+
+.footer-box ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+  color: #00c37a;
+}
+
+.emergency-number {
+  font-size: 20px;
+  color: #00c37a;
+  margin-bottom: 10px;
+}
+
+.emergency-text {
+  color: #cfcfcf;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-bottom .heart {
+  color: red;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #00c37a;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.scroll-top:hover {
+  background: #00a868;
+}
+/* Mobile First CEO Section */
+/* Button */
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #764ba2;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #008c5a;
+}
+ 
+/* Responsive */
+@media(max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+  }
+
+.ceo-section {
+  padding: 50px 15px;
+  background: #f8f9fb;
+}
+
+.ceo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* CEO Image */
+.ceo-photo img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* CEO Content */
+.ceo-details {
+  text-align: center;
+}
+
+.ceo-details h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.ceo-title {
+  font-size: 15px;
+  color: #764ba2;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.ceo-bio {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Info List */
+.ceo-info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.ceo-info-list li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.ceo-info-list strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.ceo-info-list a {
+  color: #764ba2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+  .footer-brand {
+    justify-content: center;
+  }
+}
         /* Hero badge animation */
         .hero-badge {
             animation: fadeInUp 0.8s ease;
