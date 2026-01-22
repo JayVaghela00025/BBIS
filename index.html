@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byte Batchelor IT Solutions</title>
+
+<meta name="description" content="Byte Bachelors is a leading IT solutions company providing web development, software solutions, UI/UX design and digital transformation services in India." />
+
     <link rel="icon" type="image/png" href="assets/icon.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -39,23 +42,26 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-badge">● Transforming Ideas into Digital Reality</div>
+            <h1>Byte Bachelors IT Solutions Pvt. Ltd.</h1>
             <h1>Building Smart <span class="highlight">Digital<br>Solutions</span></h1>
-            <p>Byte Batchelor delivers cutting-edge software solutions, innovative web development, and strategic tech consulting to help your business thrive in the digital age.</p>
-            <div class="hero-buttons">
+
+         <p class="section-description">
+Byte Bachelors is a professional IT solutions company based in India, specializing in web development, software engineering, UI/UX design, and digital transformation. Byte Bachelors helps startups and enterprises build scalable and secure digital products.
+</p>   <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get Started →</a>
                 <a href="#projects" class="btn-secondary">▶ View Our Work</a>
             </div>
             <div class="stats">
                 <div class="stat-item">
-                    <div class="stat-number">5+</div>
+                    <div class="stat-number">150+</div>
                     <div class="stat-label">Projects Delivered</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">5+</div>
+                    <div class="stat-number">50+</div>
                     <div class="stat-label">Happy Clients</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">1+</div>
+                    <div class="stat-number">5+</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
             </div>
@@ -68,6 +74,7 @@
             <div class="section-header">
                 <h2 class="section-title">Services That Drive <span class="highlight">Innovation</span></h2>
                 <p class="section-description">We offer comprehensive tech solutions designed to transform your business and help you achieve your digital goals.</p>
+           
             </div>
             <div class="service-grid">
                 <div class="service-card">
@@ -223,7 +230,7 @@
   </div>
 </section>
 
-    <!-- Contact Section 
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
@@ -258,96 +265,122 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="be827f41-465b-4ed6-a87c-f29c52234826">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary submit-btn">✈ Send Message</button>
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+    <input type="hidden" name="access_key" value="be827f41-465b-4ed6-a87c-f29c52234826">
+    
+    <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+    </div>
+    
+    <button type="submit" class="btn-primary submit-btn">✈ Send Message</button>
+</form>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    const emailInput = document.getElementById('email');
+    const nameInput = document.getElementById('name');
+    const emailValue = emailInput.value.trim();
+    
+    // Regular Expression for strict email validation
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+    // 1. Check if name is too short
+    if (nameInput.value.length < 2) {
+        alert("Please enter your full name.");
+        event.preventDefault(); // Stops the form from submitting
+        return;
+    }
+
+    // 2. Check if email matches the pattern
+    if (!emailPattern.test(emailValue)) {
+        alert("Please enter a valid email address (e.g., name@domain.com).");
+        event.preventDefault(); // Stops the form from submitting
+        emailInput.focus();
+        return;
+    }
+
+    // If everything is correct, the form proceeds to Web3Forms automatically
+});
+</script>
                 </div>
             </div>
         </div>
     </section>
--->
+
     <!-- Footer -->
-   <footer>
-  <div class="container">
-    <div class="footer-content">
+   <footer class="hospital-footer">
+  <div class="footer-container">
 
-      <!-- Brand -->
-      <div class="footer-section">
-        <div class="footer-logo">
-          <img src="assets/logo.jpeg" alt="BBIS Logo" class="logo-img" style="border-radius: 30px;">
-          <div>Byte<span class="footer-logo-text">Batchelor</span></div>
-        </div>
-
-        <p class="footer-desc">
-          Building innovative digital solutions for businesses worldwide.
-        </p>
-
-        <p class="footer-contact">
-          📧 <a href="mailto:ByteBachelors@gmail.com"  style="color: white;">ByteBachelors@gmail.com</a>
-        </p>
-        <p class="footer-contact">
-          📞 <a href="tel:+918140726452"  style="color: white;">+91 81407 26452</a>
-        </p>
-
-        <!-- Social Icons -->
-        <div class="social-icons" style="color: white;">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/bytebachelors?igsh=ZXdld2d5MGNwMHN4"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Fiverr"><span class="custom-icon">fi</span></a>
-          <a href="#" aria-label="Freelancer"><span class="custom-icon">fr</span></a>
+    <!-- Left: Hospital Info -->
+    <div class="footer-box">
+      <div class="footer-brand">
+        <img src="assets/logo.jpeg" alt="Shayona Hospital Logo">
+        <div>
+          <h2>Byte Bachelors IT Solution Pvt Ltd</h2>
+          <span></span>
         </div>
       </div>
 
-      <!-- Company -->
-      <div class="footer-section">
-        <h3>Company</h3>
-        <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <p class="footer-text">
+       Building innovative digital solutions for businesses worldwide.
+      </p>
 
-      <!-- Services -->
-      <div class="footer-section">
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/bytebachelors?igsh=ZXdld2d5MGNwMHN4" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@bytebachelorsitsolution?si=QCHWPQUg358xNlvZ" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#ceo">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Emergency Contact -->
+   <div class="footer-section">
         <h3>Services</h3>
         <ul class="footer-links">
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Software Solutions</a></li>
-          <li><a href="#">UI/UX Design</a></li>
-          <li><a href="#">AI Chatbots</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Software Solutions</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">AI Chatbots</a></li>
         </ul>
       </div>
 
-    </div>
+  </div>
 
-    <div class="footer-bottom">
+  <!-- Bottom Bar -->
+<div class="footer-bottom">
       <p>© 2026 ByteBatchelor IT Solution Pvt. Ltd. All rights reserved.</p>
     </div>
-  </div>
+  <!-- Scroll To Top -->
+  <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </footer>
 
 
-  <script src="assets/script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
              
-
